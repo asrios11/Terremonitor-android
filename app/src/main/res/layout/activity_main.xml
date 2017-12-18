@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:id="@+id/activiy_main"
+    tools:context="com.example.asrios.terremonitorv1.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="32dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Bienvenido a \nTerremonitor,"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textSize="20sp"
+            android:text="La app que te permite monitorear \nterremotos en todo el mundo"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_time"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ultima Hora"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:visibility="visible"
+                    android:text="Actualización cada 5 minutos" />
+
+                <Button
+                    android:id="@+id/btn_ultimaHora"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:onClick="ultimaHora"
+                    android:text="Ver Terremotos" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_time"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Ultima Día"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:visibility="visible"
+                    android:text="Actualización cada 5 minutos" />
+
+                <Button
+                    android:id="@+id/btn_ultimoDia"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:onClick="ultimoDia"
+                    android:text="Ver Terremotos" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_time"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Ultimos 7 días"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:visibility="visible"
+                    android:text="Actualización cada 5 minutos" />
+
+                <Button
+                    android:id="@+id/btn_ultimosSiete"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:onClick="ultimosSiete"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:text="Ver Terremotos" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_time"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:onClick="ultimosSiete"
+                    android:text="Ultimos 30 días"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:visibility="visible"
+                    android:text="Actualización cada 15 minutos" />
+
+                <Button
+                    android:id="@+id/btn_ultimosTreinta"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:onClick="ultimosTreinta"
+                    android:text="Ver Terremotos" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿De donde se obtiene la información? "
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btAPI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtInfo"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:text="Consulta API"
+                android:onClick="apiWebView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
+
+            <TextView
+                android:id="@+id/txtDB"
+                android:layout_below="@+id/btAPI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terremotos guardados: "
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btGuardados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDB"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:text="Ver Guardados"
+                android:onClick="verGuardados"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
