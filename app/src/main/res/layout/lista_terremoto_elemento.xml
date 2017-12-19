@@ -9,14 +9,21 @@
         android:id="@+id/terremoto_magnitud"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/atlas_grotesk_thin"
+        android:textStyle="bold"
         android:text="4.6"
+        android:textColor="#FF4F95"
+        android:textSize="15dp"
         android:layout_weight="1"/>
 
     <TextView
         android:id="@+id/terremoto_lugar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="97 km $ of Wonosari, Indonesia"
+        android:fontFamily="@font/atlas_grotesk_thin"
+        android:text="97 km  of Wonosari, Indonesia"
+        android:textColor="#125781"
+        android:textSize="15dp"
         android:layout_weight="3"/>
 
     <ImageView

@@ -15,7 +15,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Este terremoto se encuentra en la base de Datos"/>
+        android:text="Este terremoto se encuentra en la base de Datos"
+        android:fontFamily="@font/atlas_grotesk_thin"
+        android:textSize="17dp"
+        android:textColor= "#125781"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,17 +35,21 @@
             android:layout_height="wrap_content"
             android:textSize="72sp"
             android:layout_gravity="bottom"
-            android:textColor="@color/colorPrimaryDark"
-            tools:text="4.6"/>
+            android:textColor="#125781"
+            android:fontFamily="@font/atlas_grotesk_thin"
+            android:textStyle="bold"
+            android:text="4.6"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:text="  Richter"
+            android:textSize="40dp"
+            android:text=" Richter"
+            android:fontFamily="@font/atlas_grotesk_thin"
             android:layout_gravity="bottom"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#125781"
             android:id="@+id/textViewRichter"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -57,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="32dp"
             android:layout_marginEnd="32dp"
-            android:src="@drawable/ic_location"
+            android:src="@drawable/ic_spot"
             android:layout_gravity="center_vertical"/>
 
         <LinearLayout
@@ -75,6 +83,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#456F72"
+                    android:fontFamily="@font/atlas_grotesk_thin"
+                    android:textStyle="bold"
                     android:text="Longitud"/>
 
                 <TextView
@@ -82,6 +93,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#456F72"
+                    android:fontFamily="@font/atlas_grotesk_thin"
                     tools:text="Longitud"/>
 
             </LinearLayout>
@@ -97,6 +110,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#456F72"
+                    android:fontFamily="@font/atlas_grotesk_thin"
+                    android:textStyle="bold"
                     android:text="Latitud"/>
 
                 <TextView
@@ -104,14 +120,16 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    tools:text="Latitud"/>
+                    android:textColor="#456F72"
+                    android:fontFamily="@font/atlas_grotesk_thin"
+                    android:text="Latitud"/>
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="4dp"
-                android:background="@color/colorPrimary"/>
+                android:background="#C90452"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -142,6 +160,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="97 Km S of Wonosari, Indonesia"
+                android:fontFamily="@font/atlas_grotesk_thin"
+                android:textStyle="bold"
+                android:textColor="#456F72"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"/>
 
@@ -149,7 +170,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="4dp"
-                android:background="@color/colorPrimary"/>
+                android:background="#C90452"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -181,6 +202,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="17 de Noviembre - 16:29-37"
+                android:textColor="#456F72"
+                android:fontFamily="@font/atlas_grotesk_thin"
+                android:textStyle="bold"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"/>
 
@@ -188,7 +212,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="4dp"
-                android:background="@color/colorPrimary"/>
+                android:background="#C90452"/>
 
 
         </LinearLayout>
@@ -207,9 +231,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/colorAccent"
-            android:text="Ver en Mapa"
             android:onClick="verMapa"
-            android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
+            android:text="Ver en Mapa"
+            android:textSize="17dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"  />
 
         <Button
             android:id="@+id/register_button"
@@ -219,6 +244,7 @@
             android:layout_marginTop= "20dp"
             android:background="@android:color/holo_blue_light"
             android:onClick="borrarOnClick"
+            android:textSize="17dp"
             android:text="Eliminar de Base de Datos"
             android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
 

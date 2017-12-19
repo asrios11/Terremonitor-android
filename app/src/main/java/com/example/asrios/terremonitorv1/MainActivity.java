@@ -5,6 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * <pre>
+ * Clase MainActivity
+ *
+ * Clase Principal que se ejecuta al correr la aplicación. muestra el menú general de lo que se puede hacer en la aplicación
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

@@ -17,6 +17,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
     private double latitud;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
         Bundle bundle = this.getIntent().getExtras();
         longitud = Double.parseDouble(bundle.getString("longitud"));
-        latitud = Double.parseDouble(bundle.getString("longitud"));
+        latitud = Double.parseDouble(bundle.getString("latitud"));
     }
 
 
@@ -49,8 +50,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         // Add a marker in Sydney and move the camera
         LatLng epicentro = new LatLng(latitud,longitud);
         mMap.addMarker(new MarkerOptions().position(epicentro).title("Epicentro del terremoto"));
-       //mMap.moveCamera(CameraUpdateFactory.newLatLng(epicentro));
         // Agregar zoom automatico:
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(epicentro,12));
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(epicentro));
+
     }
 }

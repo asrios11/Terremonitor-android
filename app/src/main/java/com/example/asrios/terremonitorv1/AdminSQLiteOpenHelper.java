@@ -5,7 +5,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by asrios on 17/12/17.
+ * <pre>
+ * Clase AdminSQLiteOpenHelper
+ *
+ * Clase para construir una base de datos SQLite
+ * Hereda la clase SQLiteOpenHelper
+ * @author Francisco Altamirano
+ * @version 1.0
+ * </pre>
  */
 
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {

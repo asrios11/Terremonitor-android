@@ -17,7 +17,13 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 
 /**
- * Created by asrios on 16/12/17.
+ * <pre>
+ * Clase DescargaTerremotosAPI
+ *
+ * Clase para manejar la información de internet con objetos de tipo JSON
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
  */
 
 public class DescargaTerremotosAPI extends AsyncTask<URL, Void, ArrayList<Terremoto>> {

@@ -10,6 +10,7 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     android:orientation="vertical"
+
     tools:context="com.example.asrios.terremonitorv1.DataBaseConsultActivity">
 
     <TextView
@@ -17,7 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Terremotos guardados en la Base de Datos: "
-        android:textSize="15sp"/>
+        android:fontFamily="@font/atlas_grotesk_thin"
+        android:textSize="17dp"
+        android:textColor= "#FF4F95" />
 
     <ListView
         android:id="@+id/data_base_view"
@@ -36,6 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/colorAccent"
+            android:fontFamily="@font/atlas_grotesk_thin"
+            android:textStyle="bold"
             android:text="Borrar todos los terremotos"
             android:onClick="deleteAllDB"
             android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />

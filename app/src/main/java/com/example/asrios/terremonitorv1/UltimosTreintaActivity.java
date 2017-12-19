@@ -11,6 +11,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
+/**
+ * <pre>
+ * Clase UltimosTreintaActivity
+ *
+ * Clase para visualizar la lista de terremotos que ocurrieron en el último mes
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
+
 public class UltimosTreintaActivity extends AppCompatActivity implements DescargaTerremotosAPI.DownloadTerremotosInterface {
 
     public final static String TERREMOTO_ACTUAL = "terremoto_actual";
@@ -27,7 +37,7 @@ public class UltimosTreintaActivity extends AppCompatActivity implements Descarg
         downloadTerremoto.delegate = this;
 
         try{
-            downloadTerremoto.execute(new URL("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson"));
+            downloadTerremoto.execute(new URL("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"));
         }catch (MalformedURLException e){
             e.printStackTrace();
         }

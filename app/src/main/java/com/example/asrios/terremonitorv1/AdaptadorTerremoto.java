@@ -12,10 +12,15 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by asrios on 16/12/17.
- */
 
+/**
+ * <pre>
+ * Clase Adaptador Terremoto
+ * Hereda de la clase ArrayAdapter
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
 public class AdaptadorTerremoto extends ArrayAdapter<Terremoto> {
 
     private ArrayList<Terremoto> listaTerremotos;

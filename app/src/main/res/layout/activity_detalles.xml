@@ -28,16 +28,19 @@
             android:layout_height="wrap_content"
             android:textSize="72sp"
             android:layout_gravity="bottom"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#125781"
+            android:fontFamily="@font/atlas_grotesk_thin"
+            android:textStyle="bold"
             tools:text="4.6"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:text="  Richter"
+            android:textSize="40dp"
+            android:text=" Richter"
             android:layout_gravity="bottom"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#125781"
+            android:fontFamily="@font/atlas_grotesk_thin"
             android:id="@+id/textViewRichter"/>
     </LinearLayout>
 
@@ -72,6 +75,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#456F72"
+                    android:fontFamily="@font/atlas_grotesk_thin"
+                    android:textStyle="bold"
                     android:text="Longitud"/>
 
                 <TextView
@@ -79,7 +85,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    tools:text="Longitud"/>
+                    android:textColor="#456F72"
+                    android:fontFamily="@font/atlas_grotesk_thin"
+                    android:text="Longitud"/>
 
             </LinearLayout>
 
@@ -94,6 +102,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#456F72"
+                    android:fontFamily="@font/atlas_grotesk_thin"
+                    android:textStyle="bold"
                     android:text="Latitud"/>
 
                 <TextView
@@ -101,14 +112,16 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    tools:text="Latitud"/>
+                    android:textColor="#456F72"
+                    android:fontFamily="@font/atlas_grotesk_thin"
+                    android:text="Latitud"/>
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="4dp"
-                android:background="@color/colorPrimary"/>
+                android:background="#C90452"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -139,6 +152,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="97 Km S of Wonosari, Indonesia"
+                android:textColor="#456F72"
+                android:fontFamily="@font/atlas_grotesk_thin"
+                android:textStyle="bold"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"/>
 
@@ -146,7 +162,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="4dp"
-                android:background="@color/colorPrimary"/>
+                android:background="#C90452"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -177,7 +193,10 @@
                 android:id="@+id/eq_detail_date_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="17 de Noviembre - 16:29-37"
+                android:text="17 de Noviembre - 16:29-37"
+                android:textColor="#456F72"
+                android:fontFamily="@font/atlas_grotesk_thin"
+                android:textStyle="bold"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"/>
 
@@ -185,7 +204,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="4dp"
-                android:background="@color/colorPrimary"/>
+                android:background="#C90452"/>
 
 
         </LinearLayout>
@@ -206,6 +225,9 @@
             android:background="@color/colorAccent"
             android:text="Ver en Mapa"
             android:onClick="verMapa"
+            android:textSize="17dp"
+            android:fontFamily="@font/atlas_grotesk_thin"
+            android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
 
         <Button
@@ -217,6 +239,9 @@
             android:background="@android:color/holo_blue_light"
             android:onClick="altaOnClick"
             android:text="Guardar"
+            android:textSize="17dp"
+            android:fontFamily="@font/atlas_grotesk_thin"
+            android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
 
 

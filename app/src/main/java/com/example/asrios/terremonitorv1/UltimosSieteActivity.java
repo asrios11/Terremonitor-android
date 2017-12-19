@@ -11,6 +11,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
+/**
+ * <pre>
+ * Clase UltimosSieteActivity
+ *
+ * Clase para visualizar la lista de terremotos que ocurrieron en la última semana
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
+
 public class UltimosSieteActivity extends AppCompatActivity implements DescargaTerremotosAPI.DownloadTerremotosInterface {
 
     public final static String TERREMOTO_ACTUAL = "terremoto_actual";

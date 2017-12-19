@@ -11,6 +11,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
+
+/**
+ * <pre>
+ * Clase UltimaHoraActivity
+ *
+ * Clase para visualizar la lista de terremotos que ocurrieron en la última hora
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
 public class UltimaHoraActivity extends AppCompatActivity implements DescargaTerremotosAPI.DownloadTerremotosInterface{
 
     public final static String TERREMOTO_ACTUAL = "terremoto_actual";

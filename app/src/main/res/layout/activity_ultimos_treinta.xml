@@ -17,7 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Terremotos en los ultimos 30 días: "
-        android:textSize="15sp"/>
+        android:fontFamily="@font/atlas_grotesk_thin"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor= "#FF4F95" />
 
     <ListView
         android:id="@+id/lista_terremoto_view4"

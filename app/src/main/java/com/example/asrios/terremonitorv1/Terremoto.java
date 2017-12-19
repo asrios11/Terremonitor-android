@@ -4,9 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by asrios on 16/12/17.
+ * <pre>
+ * Clase Terremoto
+ *
+ * Clase que permite instanciar objetos de tipo Terremoto con todos sus atributos y métodos
+ * Implementa la interfaz Parcelable
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
  */
-
 public class Terremoto implements Parcelable {
     private Long dateTime;
     private Double magnitud;

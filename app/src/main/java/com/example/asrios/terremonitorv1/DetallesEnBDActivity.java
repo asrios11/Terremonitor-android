@@ -1,6 +1,5 @@
 package com.example.asrios.terremonitorv1;
 
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +11,18 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
+/**
+ * <pre>
+ * Clase DetallesEnBDActivity
+ *
+ * Clase para manejar la información de cada terremoto para ver la información detallada de cada terremoto
+ * guardado en la base de datos.
+ * Tiene un botón para ver el mapa y otro para eliminarlo en la base de datos
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
 
 public class DetallesEnBDActivity extends AppCompatActivity {
 
@@ -59,13 +70,19 @@ public class DetallesEnBDActivity extends AppCompatActivity {
         bd.close();
 
         if (cant ==1)
-            Toast.makeText(this,"se borró el terremoto de la clave de datos", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Se borró el terremoto de la base de datos", Toast.LENGTH_LONG).show();
         else
             Toast.makeText(this,"ERROR: no se pudo borrar el terremoto", Toast.LENGTH_LONG).show();
 
     }
 
     public void verMapa (View v){
+        Intent intent = new Intent(DetallesEnBDActivity.this, MapActivity.class);
+        Bundle b = new Bundle();
+        b.putString("longitud", terremoto.getLongitud());
+        b.putString("latitud", terremoto.getLatitud());
+        intent.putExtras(b);
+        startActivity(intent);
 
     }
 

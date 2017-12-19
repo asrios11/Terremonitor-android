@@ -4,6 +4,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
 
+/**
+ * <pre>
+ * Clase WebViewActivity
+ *
+ * Clase para visualizar la página de internet en versión móvil utilizando un web view
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
+
 public class WebViewActivity extends AppCompatActivity {
 
     @Override

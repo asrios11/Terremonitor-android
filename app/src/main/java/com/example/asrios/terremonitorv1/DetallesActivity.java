@@ -13,6 +13,17 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+/**
+ * <pre>
+ * Clase DetallesActivity
+ *
+ * Clase para manejar la información de cada terremoto para ver la información detallada de cada terremoto.
+ * Tiene un botón para ver el mapa y otro para guardarlo en la base de datos
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
+
 public class DetallesActivity extends AppCompatActivity {
 
     public final static String TERREMOTO_ACTUAL = "terremoto_actual";

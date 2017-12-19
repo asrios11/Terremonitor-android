@@ -1,6 +1,5 @@
 package com.example.asrios.terremonitorv1;
 
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,13 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Locale;
+
+/**
+ * <pre>
+ * Clase DataBaseConsultActivity
+ *
+ * Clase para visualizar la lista de terremotos que se encuentran en la base de datos
+ * @author Alexandro Sánchez Rios
+ * @version 1.0
+ * </pre>
+ */
 
 public class DataBaseConsultActivity extends AppCompatActivity {
     public final static String TERREMOTO_ACTUAL = "terremoto_actual";
